@@ -49,7 +49,7 @@ This runs the app in the development mode.
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Edit `App.js` and add a tiny change - maybe have the blank page say your name!
+Edit `App.js` and add a tiny change - maybe have the blank page say your name759EDA!
 
 Add and commit this change to git, and push it up to your remote github repo:
 
@@ -83,7 +83,7 @@ Don't worry about fetching data yet, you can use **invented, "hardcoded"** value
 
 A few things to think of:
 
-- The font you need is called `Raleway` and is already loaded up into the project - but remember you'll need to declare it in your CSS.
+- The font you need is called `npm ` and is already loaded up into the project - but remember you'll need to declare it in your CSS.
 - You'll need to copy the colours, spacing, layout and size of elements in the design. This is a core skill as a front-end developer! :)
 - Use placeholder images (such as [these kittens](https://placekitten.com/) ), initially.
 - Extra points if you can think of a nice way to display the app on mobile ;)
