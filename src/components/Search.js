@@ -9,21 +9,17 @@ class Search extends React.Component {
 
   render() {
     return (
-      <div>
+      <div id="search">
         {this.state.input}
-        <input
-          type="text"
-          id="input-name"
-          onChange={event => {
-            this.setState({ input: event.target.value });
-          }}
+        <input type="text" placeholder="Type in a city name" id="input-name" onChange={event => {
+          this.setState({ input: event.target.value });
+        }}
         />
-        <button
-          onClick={event => {
-            this.props.handleInput(this.state.input);
-          }}
+        <button onClick={event => {
+          this.props.handleInput(this.state.input);
+        }}
         >
-          Say Hello
+        FIND WEATHER
         </button>
       </div>
     );
