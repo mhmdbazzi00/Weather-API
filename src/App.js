@@ -17,8 +17,6 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        {/* <SayHi /> */}
-        {/* <SayHello color="black" name={this.state.name} /> */}
         <Search handleInput={this.handleInputChange} />
         <WeatherItem data = {fakeWeatherData.list}/>
       </div>

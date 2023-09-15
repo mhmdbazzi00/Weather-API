@@ -43,10 +43,10 @@ export default function WeatherItem({data}) {
         <section id="temperature">
           <p className="marginFix label">Temperature</p>
           {data.slice(6,7).map((item, index) => (
-          <p className="marginFix" id="from" key={index}>{item.main.temp_min}</p> ))}
+          <p className="marginFix" id="from" key={index}>{parseInt(item.main.temp_min - 273.15)}°C</p> ))}
           <p className="marginFix">to</p>
           {data.slice(0,1).map((item, index) => (
-          <p className="marginFix" id="to" key={index}>{item.main.temp_max}</p> ))}
+          <p className="marginFix" id="to" key={index}>{parseInt(item.main.temp_max -273.15)}°C</p> ))}
         </section>
         <section id="humidPress">
           <p className="label marginFix">Humidity</p>
@@ -68,7 +68,7 @@ export default function WeatherItem({data}) {
           </section>
           <section id="third">
           {data.slice(0,7).map((item, index) => (
-          <span key={index}>{item.main.temp}</span>
+          <span key={index}>{parseInt(item.main.temp - 273.15)}°C</span>
           ))}
           </section>
         </div>
