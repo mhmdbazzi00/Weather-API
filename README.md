@@ -238,7 +238,7 @@ Look at the design:
 
 ```sh
 # git add .
-# git commit -m "Weather API: Getting the LIVE weather data"
+# git commit -m  
 # git push
 ```
 
