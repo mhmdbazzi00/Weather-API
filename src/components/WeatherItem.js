@@ -38,15 +38,19 @@ export default function WeatherItem({data}) {
         </section>
         <section id="temperature">
           <p className="marginFix label">Temperature</p>
-          <p className="marginFix" id="from">10</p>
+          {data.slice(6,7).map((item, index) => (
+          <p className="marginFix" id="from" key={index}>{item.main.temp_min}</p> ))}
           <p className="marginFix">to</p>
-          <p className="marginFix" id="to">11 c</p>
+          {data.slice(0,1).map((item, index) => (
+          <p className="marginFix" id="to" key={index}>{item.main.temp_max}</p> ))}
         </section>
         <section id="humidPress">
           <p className="label marginFix">Humidity</p>
-          <p id="humid" className="value marginFix">data</p>
+          {data.slice(0,1).map((item, index) => (
+          <p id="humid" className="value marginFix" key={index}>{item.main.humidity}%</p> ))}
           <p className="label marginFix">Pressure</p>
-          <p id="press" className="value marginFix">1008.50</p>
+          {data.slice(0,1).map((item, index) => (
+          <p id="press" className="value marginFix" key={index}>{item.main.pressure}</p> ))}
         </section>
 
         <div id="daily_weather">
@@ -75,7 +79,7 @@ export default function WeatherItem({data}) {
           </section>
           <section id="third">
           {data.slice(0,7).map((item, index) => (
-          <span key={index} >{item.main.temp}</span>
+          <span key={index}>{item.main.temp}</span>
           ))}
             {/* <span>9°C</span>
             <span>14°C</span>
