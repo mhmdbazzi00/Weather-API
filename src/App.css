@@ -1,24 +1,33 @@
-.app {
+#root {
   height: 100vh;
+  max-height: 100vh;
+}
+
+.app {
   width: 100%;
-  font-family:Raleway;
+  font-family: Raleway;
   display: flex;
   flex-direction: column;
-  gap: 10%;
+  height: 100%;
 }
-body{
+body {
   margin: 0px;
 }
-body{
+body {
   background-color: #90c4fd;
- 
 }
 
 @font-face {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCFPrEHJA.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCFPrEHJA.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+
+#container_comp {
+  height: 100%;
 }

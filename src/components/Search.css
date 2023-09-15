@@ -1,36 +1,43 @@
-#search {
-    background-color: rgb(117,158,218);
-    height: 110px;
-    border: rgb(117,158,218); } ::placeholder {
+.container{
+    background-color: #5390e6;
+    display: flex;
+    gap: 5%;
+    height: 90px;
+    font-family:Raleway;
+
+}
+
+.container button,#input-name{
+
+   height: 50%;
+   margin-top: 20px;
+
+}
+
+#input-name{
+    margin-left: 1%;
     color: white;
+    background-color: #6495ed;
+    border-width:0 ;
+    font-size: 25px;
+    font-family:Raleway;
+
 }
 
-body {
-    margin: 0;
+.container button{
+    height: 60%;
+    font-family:Raleway;
+    font-size: 25px;
+    background-color: #4864ad;
+    border-width: 0px;
+
+
+
 }
 
-#input-name {
-    background-color: rgb(117,158,218);
-    height: 50px;
-    width: 23%;
-    margin-top: 30px;
-    margin-left: 2%;
-    border: none;
-    font-size: 100%;
-    color: white;
-}
-
-button {
-    background-color: rgb(88,121,199);
-    color: rgb(25,36,105);
-    height: 50px;
-    padding-top: 20px ;
-    padding-bottom: 20px;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding: 2px;
-    border: none;
-    font-size: 100%;
+#input-name:focus{
+    outline: none;
+    border-bottom-width:1px ;
 }
 @media (max-width:700px){
     .container{
