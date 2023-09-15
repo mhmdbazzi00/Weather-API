@@ -1,11 +1,7 @@
 import React, { Component } from "react";
 import Search from "./components/Search";
 import WeatherItem from "./components/WeatherItem";
-// import weather_partlycloudy_icon from "./img/weather-icons/partlycloudy.svg"
-// import weather_clear_icon from "./img/weather-icons/clear.svg"
-// import SayHi, { SayHello } from "./components/WeatherItem";
 import fakeWeatherData from "./fakeWeatherData.json";
-
 import "./App.css";
 
 class App extends Component {
@@ -15,11 +11,9 @@ class App extends Component {
       name: "Kamal"
     };
   }
-
   handleInputChange = value => {
     this.setState({ name: value });
   };
-
   render() {
     return (
       <div className="app">
@@ -31,5 +25,4 @@ class App extends Component {
     );
   }
 }
-
 export default App;

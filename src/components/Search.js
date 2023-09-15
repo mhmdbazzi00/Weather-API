@@ -4,7 +4,6 @@ class Search extends React.Component {
   state = {
     input: ""
   };
-
   render() {
     return (
       <div id="search">
@@ -24,4 +23,3 @@ class Search extends React.Component {
   }
 }
 export default Search;
-          
