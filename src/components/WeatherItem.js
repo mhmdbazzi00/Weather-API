@@ -58,7 +58,7 @@ export default function WeatherItem({data}) {
             {data.slice(0,7).map((item, index) => (
             <span key={index}>{item.dt_txt.slice(11,16)}</span> ))}
             {/* <span>06:00</span>
-            <span>09:00</span
+            <span>09:00</span9
             <span>12:00</span>
             <span>15:00</span>
             <span>18:00</span>
