@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Search from "./components/Search";
 import WeatherItem from "./components/WeatherItem";
-// import weather_icon from "./img/weather-icons/partlycloudy.svg"
+// import weather_partlycloudy_icon from "./img/weather-icons/partlycloudy.svg"
 // import weather_clear_icon from "./img/weather-icons/clear.svg"
 // import SayHi, { SayHello } from "./components/WeatherItem";
 import fakeWeatherData from "./fakeWeatherData.json";
@@ -26,7 +26,7 @@ class App extends Component {
         {/* <SayHi /> */}
         {/* <SayHello color="black" name={this.state.name} /> */}
         <Search handleInput={this.handleInputChange} />
-        <WeatherItem />
+        <WeatherItem data = {fakeWeatherData.list}/>
       </div>
     );
   }
