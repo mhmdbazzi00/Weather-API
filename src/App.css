@@ -55,7 +55,8 @@ body {
 /* Current weather */
 
 html{
-  margin: 0; }
+  margin: 0;
+  font-family: "Raleway"; }
 
 img{
   width: 80px;
@@ -90,3 +91,49 @@ height: 80px ;}
   justify-content: space-between;
   align-items: center;
   height: 220px; }
+
+@media (max-width: 900px) {
+  html {
+    width: fit-content;
+  }
+  
+  body {
+    width:fit-content;
+  }
+
+  img{
+    width: 10%;
+    height: 80px;}
+
+  #labelNow {
+    font-size: 15px;
+    margin-left: 40%;
+    margin-top: 0;
+  }
+
+  #temperature {
+    font-size: 15px;
+  }
+
+  #humidPress {
+    font-size: 13px;
+    margin-left: 36%;
+  }
+
+  #daily_weather {
+    margin-top: 25px;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  #first{
+    font-size: 14px; }
+
+  #third{
+    font-size: 14px; }
+
+  #iconNow {
+    width: 25%;
+    margin-left: 37%;
+  }
+}
